@@ -13,4 +13,4 @@
  * "ABBA" -> 2 # 'A' and 'B' each occur twice
  */
 
-fun duplicateCount(text: String): Int = text.groupBy { it.lowercase() }.count{ it.value.count() > 1 }
+fun duplicateCount(text: String): Int = text.groupBy { it.lowercase() }.count { it.value.count() > 1 }
