@@ -129,7 +129,7 @@ fun areaOrPerimeter(
  * Task:
  * Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
  */
-fun countingSheep(num: Int): String = arrayOfNulls<String>(num).mapIndexed { i, _ -> "${i + 1} sheep..." }.joinToString("")
+fun countingSheep(num: Int): String = (1..num).mapIndexed { i, _ -> "$i sheep..." }.joinToString("")
 
 fun main() {
     println(countingSheep(3))
